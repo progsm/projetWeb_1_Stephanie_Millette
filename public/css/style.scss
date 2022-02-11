@@ -1,0 +1,622 @@
+/**
+    League Gothic Regular
+    font-family: league-gothic, sans-serif;
+
+    League Gothic Condensed Regular
+    font-family: league-gothic-condensed, sans-serif;
+
+    League Gothic Condensed Italic
+    font-family: league-gothic-condensed, sans-serif;
+*/
+
+// variable de ma couleur vert
+$couleurVert: #00ffa5;
+
+// body commun à chacun
+body{
+    background-image: url("../images/imageFilteVert.jpg");
+    background-position: center;
+    height: 1080px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    font-family: league-gothic, sans-serif;
+    background-color: #000;
+    color: #fff;
+    // message d'erreur
+    .erreur{
+        color: rgb(253, 42, 42);
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: #000;
+        font-size: 24px;
+        margin-right: 315px;
+    }
+    // messgage d'erreur de connextion
+    .erreur-connexion{
+        margin-right: 137px;
+    }
+    // header et section .boite-centrer
+    header, .boite-centrer{
+        width: 75%;
+        margin-top: 90px;
+        // div bienvenue à l'administrateur et bouton déconnexion
+        .deconnexion{
+            margin-top: 10px;
+            letter-spacing: 2px;
+            // text-align: end;
+            float: right;
+            font-size: 24px;
+            .bouton-deconnexion{
+                background-color: $couleurVert;
+                border: 2px solid #000;
+                border-radius: 7px;
+                width: 150px;
+                text-align: center;
+                &:hover{
+                    background-color: rgba(0, 255, 165, 0.25);
+                }
+                a{
+                    color:#000;
+                font-size: 24px;
+                text-decoration: none;
+    
+                }
+            }
+        }
+        // conteneur initial avec titre de page...
+        .conteneur{
+            margin-top: 90px;
+
+            h1, h2{
+                font-family: league-gothic-condensed, sans-serif;
+                -webkit-text-stroke-width: 0.5px;
+                -webkit-text-stroke-color: #000;
+                text-shadow: 1px 1px #00ffa5;
+                text-align: center;
+            }
+            h1{
+                font-size: 80px;
+                margin: 90px 0 135px 0;
+                line-height: 70px;
+            }
+            h2{
+                font-size: 55px;
+                margin-bottom: 135px;
+                letter-spacing: 4px
+            }
+            p{
+                font-size: 32px;
+                line-height: 40px;
+            }
+        }
+        // bouton retour
+        .bouton-retour{
+            background-color: $couleurVert;
+            border: 2px solid #000;
+            border-radius: 7px;
+            width: 150px;
+            text-align: center;
+            &:hover{
+                background-color: rgba(0, 255, 165, 0.25);
+            }
+            a{
+                color:#000;
+                font-size: 24px;
+                text-decoration: none;  
+            }
+        }
+        // conteneur de l'administration
+        .conteneur-admin{
+            margin-left: 244px;
+            h1{
+                margin: 90px 0;
+                
+            }
+            .bouton-ajout{
+                background-color: #000;
+                width: 165px;
+                text-shadow: 1px 1px #00ffa5;
+                margin-top: 10px;
+                border-radius: 12px;
+                border: 1px solid $couleurVert;
+                font-size: 32px;
+                text-align: center;
+            &:hover{
+                background-image: linear-gradient(to left, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.5));
+            }
+            a{
+                color:#fff;
+                -webkit-text-stroke-width: 0.5px;
+                -webkit-text-stroke-color: #000;
+                font-size: 24px;
+                text-decoration: none;  
+                
+            }
+            }
+        }
+    }
+    // equipe de production: page qui sommes nous?
+    .section-equipe{
+        margin-top: 0px;
+        .conteneur-equipe{
+            h2{
+                font-size: 80px;
+            }
+            h3{
+                color: $couleurVert;
+                font-size: 40px;
+            }
+            hr{
+                border-top: 1px solid #fff;
+                width: 450px;
+                opacity: 1;
+            }
+        }
+    }
+   
+        // section miniature et video
+        .videos{
+            margin-top: 90px;
+            max-width: 980px;
+           
+            .fiche{
+                background-color: #000;
+                max-width: 235px;
+                margin: 5px;
+                margin-top: 45px;
+                padding: 0;
+                border-bottom: 2px solid #fff;
+                
+                .en-tete-fiche{
+                    width: 235px;
+                    .date-sorti{
+                        margin-bottom: -7px;
+                    }
+                    h5{
+                        text-transform: uppercase;
+                        -webkit-text-stroke-width: 0.5px;
+                        -webkit-text-stroke-color: #000;
+                        text-shadow: 1px 1px #00ffa5;
+                    }
+                }
+                img{
+                    margin-bottom: 10px;
+                    object-fit: contain;
+                    object-position: center center;
+                }  
+               
+                
+                .overlay{
+                    display: none;
+                    background-color: rgba(0, 0, 0, 0.75);
+                    height: 260px;
+                    width: 235px;
+                    margin-top: 80px;
+                    padding-top: 210px;
+                    letter-spacing: 2px;
+                    z-index: 1;
+                    .fond-bouton-overlay{
+                        background-color: #000;
+                    }
+                    .description{
+                        background-color: #000; 
+                        height:240px;
+                    }
+                    .bouton-play{
+                        background-color: $couleurVert;
+                        border: none;
+                        color: #000;
+                        margin-left: 32px;
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .fiche:hover .overlay{
+                display: inline;
+                position: absolute;
+                
+                
+            }  
+    
+            .conteneur-video{
+                width: 600px;
+                 background: rgba(0, 0, 0, 0.75);
+                 border: 2px solid $couleurVert;
+                 box-shadow: inset 0 0 8px $couleurVert;
+            }
+        }
+
+    // section commanditaire pas d'accueil
+    .conteneur-commanditaire{
+        margin-top: 350px;
+        width: 952px;
+
+        h2{
+            font-family: league-gothic-condensed, sans-serif;
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: #000;
+            text-shadow: 1px 1px #00ffa5;
+            text-align: center;
+            font-size: 55px;
+            margin-top: 90px;
+            margin-bottom: 135px;
+            letter-spacing: 4px
+        }
+
+        .logos-commanditaire{
+            width: 952px;
+            height: 150px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.5));
+            border-radius: 18px;
+            border: 1px solid #fff; 
+            justify-content: center;
+            align-items: center;
+
+            .logo-assurance{
+                padding-left: 47px;
+            }
+
+            .logo-banque{
+                padding-left: 88px;
+            }
+        }        
+    }
+
+    // section formulaire
+    .formulaire{
+        width: 952px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 135px 0;
+
+        .titre{
+            font-size: 48px;
+            margin-right: 335px;
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: #000;
+            text-shadow: 1px 1px #00ffa5;
+        }
+        .conteneur-formulaire{
+            border: 1px solid #fff;
+            border-radius: 0;
+
+            .boite-formulaire{
+                width: 481px;
+                background-color: #000;
+                background-image: linear-gradient(to left, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.5));
+                font-size: 32px;
+                p{
+                    font-size: 20px;
+                    text-align: end;
+                    margin-bottom: -5px;
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    div{
+                        padding: 2.5px;
+                        display: flex;
+                        justify-content: space-between;
+                        label{
+                            font-size: 24px;
+                        }
+                        input, textarea{
+                            font-size: 24px;
+                            width: 360px;
+                            background-color: $couleurVert;
+
+                        }
+                        
+                        input[type=submit]{
+                            background-color: #000;
+                            
+                            color:#fff;
+                            width: 123px;
+                            -webkit-text-stroke-width: 0.5px;
+                            -webkit-text-stroke-color: #000;
+                            text-shadow: 1px 1px #00ffa5;
+                            margin-left: 330px;
+                            margin-top: 10px;
+                            border-radius: 12px;
+                            border: 1px solid $couleurVert;
+                            font-size: 32px;
+                            &:hover{
+                                background-image: linear-gradient(to left, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.5));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+// centrer formulaire
+.formulaire-centrer{
+    margin-top: 105px;
+    align-items: center;
+        .titre-marge{
+            margin: 0;
+        }
+        .conteneur-formulaire{
+            
+            .boite-formulaire{
+                width: 500px;
+
+                form{
+                    padding: 10px 0;
+                    div{
+
+                        input[type=submit]{
+                            width: 132px;  
+                        }
+                        input[type=file]{
+                            color: #000;  
+                        }
+                    }
+                    .bouton-submit{
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    // footer
+    footer{
+        width: 100%;
+        background-image: url("../images/imageFilteVert.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        p{
+            margin-top: 15px;
+            letter-spacing: 1px;
+        }
+
+        .boite-icons{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .icon-reseaux{
+                margin: 10px 10px 10px 0;
+                background-color: rgba(255, 255, 255, 0.30);
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.733);
+                }
+                &.facebook{
+                    margin-left: 255px;
+                }
+            }
+        }
+    }
+}
+
+// barre navigation
+.navigateur{
+    background-color: #000;
+    width: 100%;
+    height: 90px;
+    .menu-hamburger{
+        background-color: #fff;
+        margin-right: 45px;
+    }
+    .logo{
+        padding-left: 147px;
+        font-size: 25px;
+        color: #222;
+        line-height: 83px;
+        }
+
+    .liens{
+        
+        .accueil-quiSommeNous-administration{
+            margin-right: 147px;
+
+            .lien-un, .lien-deux, .lien-trois{
+                color:#fff;
+                font-size:24px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                padding-left: 25px;
+                
+            }
+        }    
+
+    }
+}
+// body acccueil
+.accueil{
+
+    .navigateur{
+        
+        .liens{
+
+            .lien-un{
+                -webkit-text-stroke-width: 0.5px;
+                -webkit-text-stroke-color: #000;
+                text-shadow: 1px 1px #00ffa5;
+               
+            }
+            .lien-deux, .lien-trois{
+                
+                &:hover{
+                    color: #fff;
+                    -webkit-text-stroke-width: 0.5px;
+                    -webkit-text-stroke-color: #000;
+                    text-shadow: 1px 1px #00ffa5;
+                }
+            }
+        }
+    }
+}
+
+// body qui somme nous?
+.qui-sommes-nous{
+
+    .navigateur{
+        
+        .liens{
+
+            .lien-deux{
+                -webkit-text-stroke-width: 0.5px;
+                -webkit-text-stroke-color: #000;
+                text-shadow: 1px 1px #00ffa5;
+               
+            }
+            .lien-un, .lien-trois{
+                
+                &:hover{
+                    color: #fff;
+                    -webkit-text-stroke-width: 0.5px;
+                    -webkit-text-stroke-color: #000;
+                    text-shadow: 1px 1px #00ffa5;
+                }
+            }
+        }
+    }
+}
+
+// body de formulaire
+.page-formulaire{
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        .bouton-retour{
+            margin-top: -115px;
+        }
+    }
+    .navigateur{
+        
+        .liens{
+
+            .lien-trois{
+                -webkit-text-stroke-width: 0.5px;
+                -webkit-text-stroke-color: #000;
+                text-shadow: 1px 1px #00ffa5;
+               
+            }
+            .lien-un, .lien-deux{
+                
+                &:hover{
+                    color: #fff;
+                    -webkit-text-stroke-width: 0.5px;
+                    -webkit-text-stroke-color: #000;
+                    text-shadow: 1px 1px #00ffa5;
+                }
+            }
+        }
+    } 
+}
+
+// body administration
+.administration{
+
+    .navigateur{
+        
+        .liens{
+
+            .lien-trois{
+                -webkit-text-stroke-width: 0.5px;
+                -webkit-text-stroke-color: #000;
+                text-shadow: 1px 1px #00ffa5;
+               
+            }
+            .lien-un, .lien-deux{
+                
+                &:hover{
+                    color: #fff;
+                    -webkit-text-stroke-width: 0.5px;
+                    -webkit-text-stroke-color: #000;
+                    text-shadow: 1px 1px #00ffa5;
+                }
+            }
+        }
+    }
+}
+
+// section administration et episode
+.section-admin, .section-episodes{
+    margin-left: 120px;
+    h2{
+        font-family: league-gothic-condensed, sans-serif;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: #000;
+        text-shadow: 1px 1px #00ffa5;
+        font-size: 80px;       
+    }
+    .conteneur-utilisateur, .conteneur-episode{
+        p{
+            font-size: 24px;
+            letter-spacing: 2px;  
+        }
+
+<<<<<<< HEAD
+        .bouton-supprimer-utilisateur, .bouton-supprimer-episode, .bouton-modifier-episode, .bouton-modifier-utilisateur{
+=======
+        .bouton-supprimer-utilisateur, .bouton-modifier-episode, .bouton-modifier-utilisateur{
+>>>>>>> 1ab67e1807b973ed99d284a8e8ff82efe703333c
+            background-color: #000;
+            width: 110px;
+            height: 35px;
+            text-shadow: 1px 1px #00ffa5;
+            margin-left: 25px;
+            
+            border-radius: 12px;
+            border: 1px solid $couleurVert;
+            text-align: center;
+            &:hover{
+                background-image: linear-gradient(to left, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.5));
+            }
+            a{
+                color:#fff;
+                -webkit-text-stroke-width: 0.5px;
+                -webkit-text-stroke-color: #000;
+                font-size: 24px;
+                text-decoration: none;
+                
+                
+            }
+        }
+        .bouton-supprimer-utilisateur, .bouton-supprimer-episode{
+            text-shadow: 1px 1px rgb(207, 36, 36);
+            border: 1px solid rgb(207, 36, 36);
+        }
+    }
+}
+
+.modal-dialog{
+    margin-top: 15%;
+}
+
+// responsive pour 1200px et moins
+@media screen and (max-width: 1200px){
+    
+    .accueil-quiSommeNous-administration{        
+        align-items: flex-end;
+        li{
+            height: 40px;
+        }
+    }
+}
+
+
+// responsive pour 772px et moins
+@media screen and (max-width: 772px){
+    .accueil-quiSommeNous-administration{        
+        margin-top: 25px;
+    }
+}

@@ -1,0 +1,647 @@
+/**
+    League Gothic Regular
+    font-family: league-gothic, sans-serif;
+
+    League Gothic Condensed Regular
+    font-family: league-gothic-condensed, sans-serif;
+
+    League Gothic Condensed Italic
+    font-family: league-gothic-condensed, sans-serif;
+*/
+body {
+  background-image: url("../images/imageFilteVert.jpg");
+  background-position: center;
+  height: 1080px;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px;
+  font-family: league-gothic, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+body .erreur {
+  color: #fd2a2a;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  font-size: 24px;
+  margin-right: 315px;
+}
+
+body .erreur-connexion {
+  margin-right: 137px;
+}
+
+body header, body .boite-centrer {
+  width: 75%;
+  margin-top: 90px;
+}
+
+body header .deconnexion, body .boite-centrer .deconnexion {
+  margin-top: 10px;
+  letter-spacing: 2px;
+  float: right;
+  font-size: 24px;
+}
+
+body header .deconnexion .bouton-deconnexion, body .boite-centrer .deconnexion .bouton-deconnexion {
+  background-color: #00ffa5;
+  border: 2px solid #000;
+  border-radius: 7px;
+  width: 150px;
+  text-align: center;
+}
+
+body header .deconnexion .bouton-deconnexion:hover, body .boite-centrer .deconnexion .bouton-deconnexion:hover {
+  background-color: rgba(0, 255, 165, 0.25);
+}
+
+body header .deconnexion .bouton-deconnexion a, body .boite-centrer .deconnexion .bouton-deconnexion a {
+  color: #000;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+body header .conteneur, body .boite-centrer .conteneur {
+  margin-top: 90px;
+}
+
+body header .conteneur h1, body header .conteneur h2, body .boite-centrer .conteneur h1, body .boite-centrer .conteneur h2 {
+  font-family: league-gothic-condensed, sans-serif;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 1px 1px #00ffa5;
+  text-align: center;
+}
+
+body header .conteneur h1, body .boite-centrer .conteneur h1 {
+  font-size: 80px;
+  margin: 90px 0 135px 0;
+  line-height: 70px;
+}
+
+body header .conteneur h2, body .boite-centrer .conteneur h2 {
+  font-size: 55px;
+  margin-bottom: 135px;
+  letter-spacing: 4px;
+}
+
+body header .conteneur p, body .boite-centrer .conteneur p {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+body header .bouton-retour, body .boite-centrer .bouton-retour {
+  background-color: #00ffa5;
+  border: 2px solid #000;
+  border-radius: 7px;
+  width: 150px;
+  text-align: center;
+}
+
+body header .bouton-retour:hover, body .boite-centrer .bouton-retour:hover {
+  background-color: rgba(0, 255, 165, 0.25);
+}
+
+body header .bouton-retour a, body .boite-centrer .bouton-retour a {
+  color: #000;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+body header .conteneur-admin, body .boite-centrer .conteneur-admin {
+  margin-left: 244px;
+}
+
+body header .conteneur-admin h1, body .boite-centrer .conteneur-admin h1 {
+  margin: 90px 0;
+}
+
+body header .conteneur-admin .bouton-ajout, body .boite-centrer .conteneur-admin .bouton-ajout {
+  background-color: #000;
+  width: 165px;
+  text-shadow: 1px 1px #00ffa5;
+  margin-top: 10px;
+  border-radius: 12px;
+  border: 1px solid #00ffa5;
+  font-size: 32px;
+  text-align: center;
+}
+
+body header .conteneur-admin .bouton-ajout:hover, body .boite-centrer .conteneur-admin .bouton-ajout:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.5));
+}
+
+body header .conteneur-admin .bouton-ajout a, body .boite-centrer .conteneur-admin .bouton-ajout a {
+  color: #fff;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+body .section-equipe {
+  margin-top: 0px;
+}
+
+body .section-equipe .conteneur-equipe h2 {
+  font-size: 80px;
+}
+
+body .section-equipe .conteneur-equipe h3 {
+  color: #00ffa5;
+  font-size: 40px;
+}
+
+body .section-equipe .conteneur-equipe hr {
+  border-top: 1px solid #fff;
+  width: 450px;
+  opacity: 1;
+}
+
+body .videos {
+  margin-top: 90px;
+  max-width: 980px;
+}
+
+body .videos .fiche {
+  background-color: #000;
+  max-width: 235px;
+  margin: 5px;
+  margin-top: 45px;
+  padding: 0;
+  border-bottom: 2px solid #fff;
+}
+
+body .videos .fiche .en-tete-fiche {
+  width: 235px;
+}
+
+body .videos .fiche .en-tete-fiche .date-sorti {
+  margin-bottom: -7px;
+}
+
+body .videos .fiche .en-tete-fiche h5 {
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 1px 1px #00ffa5;
+}
+
+body .videos .fiche img {
+  margin-bottom: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+body .videos .fiche .overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 260px;
+  width: 235px;
+  margin-top: 80px;
+  padding-top: 210px;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+
+body .videos .fiche .overlay .fond-bouton-overlay {
+  background-color: #000;
+}
+
+body .videos .fiche .overlay .description {
+  background-color: #000;
+  height: 240px;
+}
+
+body .videos .fiche .overlay .bouton-play {
+  background-color: #00ffa5;
+  border: none;
+  color: #000;
+  margin-left: 32px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+body .videos .fiche:hover .overlay {
+  display: inline;
+  position: absolute;
+}
+
+body .videos .conteneur-video {
+  width: 600px;
+  background: rgba(0, 0, 0, 0.75);
+  border: 2px solid #00ffa5;
+  -webkit-box-shadow: inset 0 0 8px #00ffa5;
+          box-shadow: inset 0 0 8px #00ffa5;
+}
+
+body .conteneur-commanditaire {
+  margin-top: 350px;
+  width: 952px;
+}
+
+body .conteneur-commanditaire h2 {
+  font-family: league-gothic-condensed, sans-serif;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 1px 1px #00ffa5;
+  text-align: center;
+  font-size: 55px;
+  margin-top: 90px;
+  margin-bottom: 135px;
+  letter-spacing: 4px;
+}
+
+body .conteneur-commanditaire .logos-commanditaire {
+  width: 952px;
+  height: 150px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.5));
+  border-radius: 18px;
+  border: 1px solid #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .conteneur-commanditaire .logos-commanditaire .logo-assurance {
+  padding-left: 47px;
+}
+
+body .conteneur-commanditaire .logos-commanditaire .logo-banque {
+  padding-left: 88px;
+}
+
+body .formulaire {
+  width: 952px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 135px 0;
+}
+
+body .formulaire .titre {
+  font-size: 48px;
+  margin-right: 335px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 1px 1px #00ffa5;
+}
+
+body .formulaire .conteneur-formulaire {
+  border: 1px solid #fff;
+  border-radius: 0;
+}
+
+body .formulaire .conteneur-formulaire .boite-formulaire {
+  width: 481px;
+  background-color: #000;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.5));
+  font-size: 32px;
+}
+
+body .formulaire .conteneur-formulaire .boite-formulaire p {
+  font-size: 20px;
+  text-align: end;
+  margin-bottom: -5px;
+}
+
+body .formulaire .conteneur-formulaire .boite-formulaire form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .formulaire .conteneur-formulaire .boite-formulaire form div {
+  padding: 2.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .formulaire .conteneur-formulaire .boite-formulaire form div label {
+  font-size: 24px;
+}
+
+body .formulaire .conteneur-formulaire .boite-formulaire form div input, body .formulaire .conteneur-formulaire .boite-formulaire form div textarea {
+  font-size: 24px;
+  width: 360px;
+  background-color: #00ffa5;
+}
+
+body .formulaire .conteneur-formulaire .boite-formulaire form div input[type=submit] {
+  background-color: #000;
+  color: #fff;
+  width: 123px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 1px 1px #00ffa5;
+  margin-left: 330px;
+  margin-top: 10px;
+  border-radius: 12px;
+  border: 1px solid #00ffa5;
+  font-size: 32px;
+}
+
+body .formulaire .conteneur-formulaire .boite-formulaire form div input[type=submit]:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.5));
+}
+
+body .formulaire-centrer {
+  margin-top: 105px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .formulaire-centrer .titre-marge {
+  margin: 0;
+}
+
+body .formulaire-centrer .conteneur-formulaire .boite-formulaire {
+  width: 500px;
+}
+
+body .formulaire-centrer .conteneur-formulaire .boite-formulaire form {
+  padding: 10px 0;
+}
+
+body .formulaire-centrer .conteneur-formulaire .boite-formulaire form div input[type=submit] {
+  width: 132px;
+}
+
+body .formulaire-centrer .conteneur-formulaire .boite-formulaire form div input[type=file] {
+  color: #000;
+}
+
+body .formulaire-centrer .conteneur-formulaire .boite-formulaire form .bouton-submit {
+  margin-top: 10px;
+}
+
+body footer {
+  width: 100%;
+  background-image: url("../images/imageFilteVert.jpg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer p {
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+
+body footer .boite-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer .boite-icons .icon-reseaux {
+  margin: 10px 10px 10px 0;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+body footer .boite-icons .icon-reseaux:hover {
+  background-color: rgba(255, 255, 255, 0.733);
+}
+
+body footer .boite-icons .icon-reseaux.facebook {
+  margin-left: 255px;
+}
+
+.navigateur {
+  background-color: #000;
+  width: 100%;
+  height: 90px;
+}
+
+.navigateur .menu-hamburger {
+  background-color: #fff;
+  margin-right: 45px;
+}
+
+.navigateur .logo {
+  padding-left: 147px;
+  font-size: 25px;
+  color: #222;
+  line-height: 83px;
+}
+
+.navigateur .liens .accueil-quiSommeNous-administration {
+  margin-right: 147px;
+}
+
+.navigateur .liens .accueil-quiSommeNous-administration .lien-un, .navigateur .liens .accueil-quiSommeNous-administration .lien-deux, .navigateur .liens .accueil-quiSommeNous-administration .lien-trois {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 25px;
+}
+
+.accueil .navigateur .liens .lien-un {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 1px 1px #00ffa5;
+}
+
+.accueil .navigateur .liens .lien-deux:hover, .accueil .navigateur .liens .lien-trois:hover {
+  color: #fff;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 1px 1px #00ffa5;
+}
+
+.qui-sommes-nous .navigateur .liens .lien-deux {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 1px 1px #00ffa5;
+}
+
+.qui-sommes-nous .navigateur .liens .lien-un:hover, .qui-sommes-nous .navigateur .liens .lien-trois:hover {
+  color: #fff;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 1px 1px #00ffa5;
+}
+
+.page-formulaire {
+  background-size: cover;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-formulaire header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0px;
+}
+
+.page-formulaire header .bouton-retour {
+  margin-top: -115px;
+}
+
+.page-formulaire .navigateur .liens .lien-trois {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 1px 1px #00ffa5;
+}
+
+.page-formulaire .navigateur .liens .lien-un:hover, .page-formulaire .navigateur .liens .lien-deux:hover {
+  color: #fff;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 1px 1px #00ffa5;
+}
+
+.administration .navigateur .liens .lien-trois {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 1px 1px #00ffa5;
+}
+
+.administration .navigateur .liens .lien-un:hover, .administration .navigateur .liens .lien-deux:hover {
+  color: #fff;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 1px 1px #00ffa5;
+}
+
+.section-admin, .section-episodes {
+  margin-left: 120px;
+}
+
+.section-admin h2, .section-episodes h2 {
+  font-family: league-gothic-condensed, sans-serif;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 1px 1px #00ffa5;
+  font-size: 80px;
+}
+
+.section-admin .conteneur-utilisateur p, .section-admin .conteneur-episode p, .section-episodes .conteneur-utilisateur p, .section-episodes .conteneur-episode p {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+<<<<<<< HEAD
+.section-admin .conteneur-utilisateur .bouton-supprimer-utilisateur, .section-admin .conteneur-utilisateur .bouton-supprimer-episode, .section-admin .conteneur-utilisateur .bouton-modifier-episode, .section-admin .conteneur-utilisateur .bouton-modifier-utilisateur, .section-admin .conteneur-episode .bouton-supprimer-utilisateur, .section-admin .conteneur-episode .bouton-supprimer-episode, .section-admin .conteneur-episode .bouton-modifier-episode, .section-admin .conteneur-episode .bouton-modifier-utilisateur, .section-episodes .conteneur-utilisateur .bouton-supprimer-utilisateur, .section-episodes .conteneur-utilisateur .bouton-supprimer-episode, .section-episodes .conteneur-utilisateur .bouton-modifier-episode, .section-episodes .conteneur-utilisateur .bouton-modifier-utilisateur, .section-episodes .conteneur-episode .bouton-supprimer-utilisateur, .section-episodes .conteneur-episode .bouton-supprimer-episode, .section-episodes .conteneur-episode .bouton-modifier-episode, .section-episodes .conteneur-episode .bouton-modifier-utilisateur {
+=======
+.section-admin .conteneur-utilisateur .bouton-supprimer-utilisateur, .section-admin .conteneur-utilisateur .bouton-modifier-episode, .section-admin .conteneur-utilisateur .bouton-modifier-utilisateur, .section-admin .conteneur-episode .bouton-supprimer-utilisateur, .section-admin .conteneur-episode .bouton-modifier-episode, .section-admin .conteneur-episode .bouton-modifier-utilisateur, .section-episodes .conteneur-utilisateur .bouton-supprimer-utilisateur, .section-episodes .conteneur-utilisateur .bouton-modifier-episode, .section-episodes .conteneur-utilisateur .bouton-modifier-utilisateur, .section-episodes .conteneur-episode .bouton-supprimer-utilisateur, .section-episodes .conteneur-episode .bouton-modifier-episode, .section-episodes .conteneur-episode .bouton-modifier-utilisateur {
+>>>>>>> 1ab67e1807b973ed99d284a8e8ff82efe703333c
+  background-color: #000;
+  width: 110px;
+  height: 35px;
+  text-shadow: 1px 1px #00ffa5;
+  margin-left: 25px;
+  border-radius: 12px;
+  border: 1px solid #00ffa5;
+  text-align: center;
+}
+
+<<<<<<< HEAD
+.section-admin .conteneur-utilisateur .bouton-supprimer-utilisateur:hover, .section-admin .conteneur-utilisateur .bouton-supprimer-episode:hover, .section-admin .conteneur-utilisateur .bouton-modifier-episode:hover, .section-admin .conteneur-utilisateur .bouton-modifier-utilisateur:hover, .section-admin .conteneur-episode .bouton-supprimer-utilisateur:hover, .section-admin .conteneur-episode .bouton-supprimer-episode:hover, .section-admin .conteneur-episode .bouton-modifier-episode:hover, .section-admin .conteneur-episode .bouton-modifier-utilisateur:hover, .section-episodes .conteneur-utilisateur .bouton-supprimer-utilisateur:hover, .section-episodes .conteneur-utilisateur .bouton-supprimer-episode:hover, .section-episodes .conteneur-utilisateur .bouton-modifier-episode:hover, .section-episodes .conteneur-utilisateur .bouton-modifier-utilisateur:hover, .section-episodes .conteneur-episode .bouton-supprimer-utilisateur:hover, .section-episodes .conteneur-episode .bouton-supprimer-episode:hover, .section-episodes .conteneur-episode .bouton-modifier-episode:hover, .section-episodes .conteneur-episode .bouton-modifier-utilisateur:hover {
+=======
+.section-admin .conteneur-utilisateur .bouton-supprimer-utilisateur:hover, .section-admin .conteneur-utilisateur .bouton-modifier-episode:hover, .section-admin .conteneur-utilisateur .bouton-modifier-utilisateur:hover, .section-admin .conteneur-episode .bouton-supprimer-utilisateur:hover, .section-admin .conteneur-episode .bouton-modifier-episode:hover, .section-admin .conteneur-episode .bouton-modifier-utilisateur:hover, .section-episodes .conteneur-utilisateur .bouton-supprimer-utilisateur:hover, .section-episodes .conteneur-utilisateur .bouton-modifier-episode:hover, .section-episodes .conteneur-utilisateur .bouton-modifier-utilisateur:hover, .section-episodes .conteneur-episode .bouton-supprimer-utilisateur:hover, .section-episodes .conteneur-episode .bouton-modifier-episode:hover, .section-episodes .conteneur-episode .bouton-modifier-utilisateur:hover {
+>>>>>>> 1ab67e1807b973ed99d284a8e8ff82efe703333c
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.5));
+}
+
+<<<<<<< HEAD
+.section-admin .conteneur-utilisateur .bouton-supprimer-utilisateur a, .section-admin .conteneur-utilisateur .bouton-supprimer-episode a, .section-admin .conteneur-utilisateur .bouton-modifier-episode a, .section-admin .conteneur-utilisateur .bouton-modifier-utilisateur a, .section-admin .conteneur-episode .bouton-supprimer-utilisateur a, .section-admin .conteneur-episode .bouton-supprimer-episode a, .section-admin .conteneur-episode .bouton-modifier-episode a, .section-admin .conteneur-episode .bouton-modifier-utilisateur a, .section-episodes .conteneur-utilisateur .bouton-supprimer-utilisateur a, .section-episodes .conteneur-utilisateur .bouton-supprimer-episode a, .section-episodes .conteneur-utilisateur .bouton-modifier-episode a, .section-episodes .conteneur-utilisateur .bouton-modifier-utilisateur a, .section-episodes .conteneur-episode .bouton-supprimer-utilisateur a, .section-episodes .conteneur-episode .bouton-supprimer-episode a, .section-episodes .conteneur-episode .bouton-modifier-episode a, .section-episodes .conteneur-episode .bouton-modifier-utilisateur a {
+=======
+.section-admin .conteneur-utilisateur .bouton-supprimer-utilisateur a, .section-admin .conteneur-utilisateur .bouton-modifier-episode a, .section-admin .conteneur-utilisateur .bouton-modifier-utilisateur a, .section-admin .conteneur-episode .bouton-supprimer-utilisateur a, .section-admin .conteneur-episode .bouton-modifier-episode a, .section-admin .conteneur-episode .bouton-modifier-utilisateur a, .section-episodes .conteneur-utilisateur .bouton-supprimer-utilisateur a, .section-episodes .conteneur-utilisateur .bouton-modifier-episode a, .section-episodes .conteneur-utilisateur .bouton-modifier-utilisateur a, .section-episodes .conteneur-episode .bouton-supprimer-utilisateur a, .section-episodes .conteneur-episode .bouton-modifier-episode a, .section-episodes .conteneur-episode .bouton-modifier-utilisateur a {
+>>>>>>> 1ab67e1807b973ed99d284a8e8ff82efe703333c
+  color: #fff;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.section-admin .conteneur-utilisateur .bouton-supprimer-utilisateur, .section-admin .conteneur-utilisateur .bouton-supprimer-episode, .section-admin .conteneur-episode .bouton-supprimer-utilisateur, .section-admin .conteneur-episode .bouton-supprimer-episode, .section-episodes .conteneur-utilisateur .bouton-supprimer-utilisateur, .section-episodes .conteneur-utilisateur .bouton-supprimer-episode, .section-episodes .conteneur-episode .bouton-supprimer-utilisateur, .section-episodes .conteneur-episode .bouton-supprimer-episode {
+  text-shadow: 1px 1px #cf2424;
+  border: 1px solid #cf2424;
+}
+
+.modal-dialog {
+  margin-top: 15%;
+}
+
+@media screen and (max-width: 1200px) {
+  .accueil-quiSommeNous-administration {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .accueil-quiSommeNous-administration li {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .accueil-quiSommeNous-administration {
+    margin-top: 25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
