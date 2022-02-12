@@ -50,12 +50,12 @@
                     <div class="modal-dialog">
                         <div class="modal-content conteneur-video">
                             <div class="modal-body">
-<<<<<<< HEAD
+                                
                                 <p><?=$episode['titre']?></p>
                                 <video src="<?=$episode['video']?>" width="100%" controls autoplay></video>
-=======
+
                               <video src="<?=$episode['video']?>" width="100%" controls autoplay></video>
->>>>>>> 1ab67e1807b973ed99d284a8e8ff82efe703333c
+
                             </div>
                         </div>
                     </div>
