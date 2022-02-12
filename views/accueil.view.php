@@ -50,12 +50,8 @@
                     <div class="modal-dialog">
                         <div class="modal-content conteneur-video">
                             <div class="modal-body">
-                                
                                 <p><?=$episode['titre']?></p>
                                 <video src="<?=$episode['video']?>" width="100%" controls autoplay></video>
-
-                              <video src="<?=$episode['video']?>" width="100%" controls autoplay></video>
-
                             </div>
                         </div>
                     </div>
