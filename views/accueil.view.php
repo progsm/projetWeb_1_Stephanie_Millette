@@ -24,7 +24,7 @@
         </header>
 
         
-            <!-- affiche les miniature des épisodes et vidéo -->
+            <!-- affiche les miniatures des épisodes et vidéos -->
             <section class="row videos">
                 <?php
                     foreach($episodes as $episode){?>
